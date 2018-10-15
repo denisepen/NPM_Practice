@@ -9,10 +9,11 @@ var price = faker.commerce.price()
 
 function productList(){
   for (var i = 1; i <= 10; i++){
-    console.log(faker.fake("{{commerce.productName}} -  {{commerce.price}}"));
+    console.log(i+". ", faker.fake("{{commerce.productName}} -  ${{commerce.price}}"));
   }
 }
 productList();
+
 
 
 // console.log(cats());
